@@ -7,7 +7,7 @@ pipeline {
   stages {
      stage('git clone') {
       steps {
-         git credentialsId: 'github', url: 'https://github.com/nagachandana88/pro2.git'
+        git credentialsId: 'github', url: 'https://github.com/nagachandana88/repo.git'
         }
      }
     stage('Build clean') {
