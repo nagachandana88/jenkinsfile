@@ -6,7 +6,7 @@ pipeline {
         maven "Maven-3.6.3"      
      tool name: 'Default', type: 'git'
       tool name: 'jdk1.8.0_161', type: 'jdk'
-      tool name: 'Maven-3.6.3', type: 'maven
+      tool name: 'Maven-3.6.3', type: 'maven'
     }
   stages {
      stage('git clone') {
