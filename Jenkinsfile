@@ -21,6 +21,14 @@ pipeline {
          sh 'mvn compile'
         }
     }
+  stage('sonarqube codescan'){
+     steps{
+            sh'mvn sonar:sonar \
+ 		        -Dsonar.projectKey=com.ksapp:ks \
+  		        -Dsonar.host.url=http://3.129.61.22:9000 \
+  		        -Dsonar.login=4f8839828580c81aa23905e2e9c3b9ee7b717875 '
+          }
+   }
  stage('Build test') {
        steps {
            sh 'mvn test'
