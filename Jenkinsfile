@@ -24,9 +24,9 @@ pipeline {
   stage('sonarqube codescan'){
      steps{
             sh'mvn sonar:sonar \
- 		        -Dsonar.projectKey=com.ksapp:ks \
-  		        -Dsonar.host.url=http://18.188.170.202:9000 \
-  		        -Dsonar.login=4f8839828580c81aa23905e2e9c3b9ee7b717875 '
+            -Dsonar.projectKey=chandana \
+            -Dsonar.host.url=http://3.137.219.230:9000 \
+            -Dsonar.login=490b4dfe096bf4bac3529415e6f38b0722f27f0c '
           }
    }
  stage('Build test') {
